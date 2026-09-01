@@ -2,74 +2,129 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{seu nome aqui} - UX e Dev Front-end</title>
-    <!-- CSS compilado do SCSS | colocar o link correto, pois este vai dar erro, viu-->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Usando a fonte de icones aqui-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio – Notícias IFRN</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
 
-    <header role="banner">
-        <nav role="navigation" aria-label="Navegação principal">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main role="main">
-        <section id="sobre" aria-labelledby="titulo-card">
-            <div class="card">
+    <section>
+        <header>
+            <h2>Notícias</h2>
+        </header>
 
-                <!-- Avatar (placeholder) -->
-                <div class="card__avatar">
-                    <img src="https://via.placeholder.com/120x120/2c3e50/ffffff?text=Bruno"
-                        alt="Avatar de Bruno Nakamura, UX e Dev Front-end">
-                </div>
+        <!-- artigos de cima / com imagens-->
+        <section>
 
-                <!-- Informações -->
-                <div class="card__content">
-                    <h1 id="titulo-card">Bruno Nakamura</h1>
-                    <p class="card__subtitle">UX e Dev Front-end</p>
+            <article>
+                <img src="https://picsum.photos/seed/reuniao/400/200" alt="Reunião" />
+                <header>
+                    <span>Reunião</span>
+                    <time datetime="2026-08-31T10:00">Há 1 hora, 3 minutos</time>
+                </header>
+                <h3>Gestão e representação sindical dialogam sobre demandas dos servidores</h3>
+                <p>Encontros realizados em agosto abordaram temas relacionados ao PGD, prioridades legais, readaptação e
+                    banco de horas.</p>
+            </article>
+    
+    
+            <article>
+                <img src="https://picsum.photos/seed/cultura/400/200" alt="Arte e Cultura" />
+                <header>
+                    <span>Arte e Cultura</span>
+                    <time datetime="2026-08-27T14:00">Há 4 dias</time>
+                </header>
+                <h3>Intercâmbio entre museus de brinquedos populares tem programação gratuita em Natal</h3>
+                <p>Atividades acontecem nesta sexta-feira (28) e sábado (29), no Centro de Tecnologia e Cultura do IFRN</p>
+            </article>
+    
+    
+            <article>
+                <img src="https://picsum.photos/seed/intercampi/400/200" alt="Jogos Intercampi" />
+                <header>
+                    <span>Jogos Intercampi Estudantis 2026</span>
+                    <time datetime="2026-08-31T09:00">Há 1 hora, 45 minutos</time>
+                </header>
+                <h3>Intercampi chega ao fim com definição das últimas medalhas</h3>
+                <p>Resultados de sexta-feira e sábado encerraram a fase final estadual</p>
+            </article>
 
-                    <p class="card__description">
-                        Sou um híbrido raro: Design Systems + Engenharia de Produto.
-                        Entrego de ponta a ponta – da descoberta à produção – com métricas
-                        de negócio na cabeceira e DX/UX no detalhe.<br>
-                        Tradução simultânea entre PMs, Design, Front, Back e Data.
-                        Sem teatrinho: shippo, meço, repito.
-                    </p>
+            <article>
+                <img src="https://picsum.photos/seed/alinhamento/400/200" alt="Alinhamento" />
+                <header>
+                    <span>Alinhamento</span>
+                    <time datetime="2026-08-27T15:00">Há 4 dias, 1 hora</time>
+                </header>
+                <h3>Comissão de docentes realiza encontro presencial com capacitação</h3>
+                <p>Programação reúne integrantes para discutir o regimento interno e aprofundar conhecimentos sobre
+                    processos relacionados à carreira docente.</p>
+            </article>
+    
 
-                    <!-- Botão com ícone -->
-                    <a href="#" class="card__button" aria-label="Vamos trabalhar juntos">
-                        Vamos trabalhar juntos <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                    </a>
-                </div>
+        </section>    
 
-                <!-- Tecnologias (mockup de ícones) -->
-                <div class="card__tech" id="tecnologias">
-                    <h2 class="card__tech-title">Tecnologias que domino</h2>
-                    <ul class="card__tech-list">
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> ClickUp</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Dropbox</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> PAYCHEX</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> elastic</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> stripe</li>
-                    </ul>
-                </div>
-            </div>
+        <!-- artigos de baixo / sem imagens -->
+        <section>
+
+            <article>
+                <header>
+                    <span>Alinhamento</span>
+                    <time datetime="2026-08-27T15:00">Há 4 dias, 1 hora</time>
+                </header>
+                <h3>Comissão de docentes realiza encontro presencial com capacitação</h3>
+                <p>Programação reúne integrantes para discutir o regimento interno e aprofundar conhecimentos sobre
+                    processos relacionados à carreira docente.</p>
+            </article>
+    
+    
+            <article>
+                <header>
+                    <span>Campus Santa Cruz</span>
+                    <time datetime="2026-08-30T08:00">Há 20 horas</time>
+                </header>
+                <h3>IFRN sediou eventos sobre acessibilidade e inclusão na educação</h3>
+                <p>Programação ocorreu entre os dias 26 e 28 de agosto, no Campus Santa Cruz</p>
+            </article>
+    
+    
+            <article>
+                <header>
+                    <span>Intercampi 2026</span>
+                    <time datetime="2026-08-27T16:00">Há 4 dias, 16 horas</time>
+                </header>
+                <h3>Judô estreia e futebol define classificados nos Jogos Intercampi</h3>
+                <p>Quinta-feira reúne estreia da modalidade e rodadas que encaminham as semifinais da fase final</p>
+            </article>
+    
+    
+            <article>
+                <header>
+                    <span>Evento</span>
+                    <time datetime="2026-08-28T10:00">Há 3 dias, 22 horas</time>
+                </header>
+                <h3>III Encontro de Assessores de Projetos de Ensino reúne representantes dos 22 Campi na Reitoria</h3>
+                <p>O evento promoveu formação, troca de experiências e discussões sobre a regulamentação e o acompanhamento
+                    dos Projetos de Ensino no Instituto.</p>
+            </article>
+    
+    
+            <article>
+                <img src="https://picsum.photos/seed/jee/400/200" alt="JEE 2026" />
+                <header>
+                    <span>JEE 2026</span>
+                    <time datetime="2026-08-26T18:00">Há 5 dias, 12 horas</time>
+                </header>
+                <h3>Novas modalidades ampliam programação dos Jogos Intercampi nesta quarta-feira</h3>
+                <p>Segundo dia da fase final teve provas individuais, disputas coletivas e continuidade das rodadas
+                    classificatórias</p>
+            </article>
+
         </section>
-    </main>
+    </section>
 
-    <footer role="contentinfo">
-        <p>&copy; 2026 Bruno Nakamura - Exemplo didático para alunos de webdesign</p>
-    </footer>
 </body>
 
 </html>
