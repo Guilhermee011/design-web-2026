@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{seu nome aqui} - UX e Dev Front-end</title>
-    <!-- CSS compilado do SCSS | colocar o link correto, pois este vai dar erro, viu-->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Usando a fonte de icones aqui-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prática Tailwind - Dia 2 [Atividade 6]</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-100 p-6">
 
-<body>
+  <section class="max-w-7xl mx-auto px-4 py-10">
 
-    <header role="banner">
-        <nav role="navigation" aria-label="Navegação principal">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1 class="text-3xl font-bold text-green-800 mb-8">Notícias</h1>
 
-    <main role="main">
-        <section id="sobre" aria-labelledby="titulo-card">
-            <div class="card">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <!-- Avatar (placeholder) -->
-                <div class="card__avatar">
-                    <img src="https://via.placeholder.com/120x120/2c3e50/ffffff?text=Bruno"
-                        alt="Avatar de Bruno Nakamura, UX e Dev Front-end">
-                </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
+        <img
+          src="Brasil.jpg"
+          alt="Prêmio IEL 2026"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+          <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-green-100 text-green-800 w-fit">
+            Prêmio IEL 2026
+          </span>
+          <h2 class="text-xl font-bold text-green-800">
+            IFRN tem projetos entre os vencedores do Prêmio IEL 2026
+          </h2>
+          <p class="text-gray-700 text-sm flex-1">
+            Instituto conquistou o 1º lugar em Educação Inovadora - Nível Técnico e o 2º lugar em Educação Inovadora - Nível Superior.
+          </p>
+          <span class="text-gray-500 text-xs mt-2">Há 20 horas, 40 minutos</span>
+        </div>
+      </div>
 
-                <!-- Informações -->
-                <div class="card__content">
-                    <h1 id="titulo-card">Bruno Nakamura</h1>
-                    <p class="card__subtitle">UX e Dev Front-end</p>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
+        <img
+          src="Dna.jpg"
+          alt="Pesquisa"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+          <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-blue-100 text-blue-800 w-fit">
+            Pesquisa
+          </span>
+          <h2 class="text-xl font-bold text-green-800">
+            Inscrições para bolsas de mestrado e doutorado seguem até 24 de agosto
+          </h2>
+          <p class="text-gray-700 text-sm flex-1">
+            Edital tem três bolsas de mestrado e uma de doutorado para estudantes que ingressaram em programas de pós-graduação em 2026.
+          </p>
+          <span class="text-gray-500 text-xs mt-2">Há 3 dias, 23 horas</span>
+        </div>
+      </div>
 
-                    <p class="card__description">
-                        Sou um híbrido raro: Design Systems + Engenharia de Produto.
-                        Entrego de ponta a ponta – da descoberta à produção – com métricas
-                        de negócio na cabeceira e DX/UX no detalhe.<br>
-                        Tradução simultânea entre PMs, Design, Front, Back e Data.
-                        Sem teatrinho: shippo, meço, repito.
-                    </p>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col">
+        <img
+          src="Avião.jpg"
+          alt="Internacionalização"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-5 flex flex-col flex-1 space-y-2">
+          <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-yellow-100 text-yellow-800 w-fit">
+            Internacionalização
+          </span>
+          <h2 class="text-xl font-bold text-green-800">
+            Inscrições para o Programa Passaporte IFRN são prorrogadas até 25 de agosto
+          </h2>
+          <p class="text-gray-700 text-sm flex-1">
+            Seleção é destinada a estudantes de licenciatura e prevê intercâmbio internacional em Córdoba, na Argentina.
+          </p>
+          <span class="text-gray-500 text-xs mt-2">Há 4 dias, 1 hora</span>
+        </div>
+      </div>
 
-                    <!-- Botão com ícone -->
-                    <a href="#" class="card__button" aria-label="Vamos trabalhar juntos">
-                        Vamos trabalhar juntos <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                    </a>
-                </div>
+    </div>
+  </section>
 
-                <!-- Tecnologias (mockup de ícones) -->
-                <div class="card__tech" id="tecnologias">
-                    <h2 class="card__tech-title">Tecnologias que domino</h2>
-                    <ul class="card__tech-list">
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> ClickUp</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Dropbox</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> PAYCHEX</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> elastic</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> stripe</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer role="contentinfo">
-        <p>&copy; 2026 Bruno Nakamura - Exemplo didático para alunos de webdesign</p>
-    </footer>
 </body>
-
 </html>
