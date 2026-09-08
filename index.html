@@ -2,74 +2,273 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{seu nome aqui} - UX e Dev Front-end</title>
-    <!-- CSS compilado do SCSS | colocar o link correto, pois este vai dar erro, viu-->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Usando a fonte de icones aqui-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 9 – Footer IFRN</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@latest/src/css/phosphor.css" />
 </head>
 
-<body>
+<body class="bg-gray-100 font-sans text-gray-800 antialiased">
 
-    <header role="banner">
-        <nav role="navigation" aria-label="Navegação principal">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- restante do código deverá ficar por aqui -->
 
-    <main role="main">
-        <section id="sobre" aria-labelledby="titulo-card">
-            <div class="card">
+    <footer id="footer" class="bg-emerald-900 text-white pt-8 pb-4">
 
-                <!-- Avatar (placeholder) -->
-                <div class="card__avatar">
-                    <img src="https://via.placeholder.com/120x120/2c3e50/ffffff?text=Bruno"
-                        alt="Avatar de Bruno Nakamura, UX e Dev Front-end">
-                </div>
+        <!-- Botão "Voltar ao topo" -->
+        <div id="go-to-top" class="max-w-7xl mx-auto px-4 mb-8 text-right">
+            <div>
+                <button type="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="bg-emerald-800 hover:bg-emerald-700 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors cursor-pointer inline-flex items-center gap-2">
+                    Voltar ao topo
+                </button>
+            </div>
+        </div>
 
-                <!-- Informações -->
-                <div class="card__content">
-                    <h1 id="titulo-card">Bruno Nakamura</h1>
-                    <p class="card__subtitle">UX e Dev Front-end</p>
-
-                    <p class="card__description">
-                        Sou um híbrido raro: Design Systems + Engenharia de Produto.
-                        Entrego de ponta a ponta – da descoberta à produção – com métricas
-                        de negócio na cabeceira e DX/UX no detalhe.<br>
-                        Tradução simultânea entre PMs, Design, Front, Back e Data.
-                        Sem teatrinho: shippo, meço, repito.
-                    </p>
-
-                    <!-- Botão com ícone -->
-                    <a href="#" class="card__button" aria-label="Vamos trabalhar juntos">
-                        Vamos trabalhar juntos <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        <!-- Mapa do site (sitemap) -->
+        <div id="sitemap" class="max-w-7xl mx-auto px-4 pb-12 border-b border-emerald-800">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-sm">
+                
+                <!-- Processos seletivos -->
+                <li class="space-y-3">
+                    <a href="/processos-seletivos/buscar/" aria-haspopup="true" class="font-bold text-emerald-200 hover:text-white transition-colors block text-base border-b border-emerald-700 pb-1">
+                        Processos seletivos
                     </a>
-                </div>
-
-                <!-- Tecnologias (mockup de ícones) -->
-                <div class="card__tech" id="tecnologias">
-                    <h2 class="card__tech-title">Tecnologias que domino</h2>
-                    <ul class="card__tech-list">
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> ClickUp</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> Dropbox</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> PAYCHEX</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> elastic</li>
-                        <li><i class="fas fa-check-circle" aria-hidden="true"></i> stripe</li>
+                    <ul aria-label="submenu" class="space-y-2 text-xs text-gray-300">
+                        <li><a href="/processos-seletivos/buscar/?tipo=1" class="hover:text-white transition-colors block">Bolsas para estudantes</a></li>
+                        <li><a href="/processos-seletivos/buscar/?tipo=2" class="hover:text-white transition-colors block">Empreenda no IFRN</a></li>
+                        <li><a href="/processos-seletivos/buscar/?tipo=3" class="hover:text-white transition-colors block">Estude no IFRN</a></li>
+                        <li><a href="/processos-seletivos/buscar/?tipo=4" class="hover:text-white transition-colors block">Gestão IFRN</a></li>
+                        <li><a href="/processos-seletivos/buscar/?tipo=5" class="hover:text-white transition-colors block">Internacionalização</a></li>
+                        <li><a href="/processos-seletivos/buscar/?tipo=6" class="hover:text-white transition-colors block">Monitoria e Tutoria</a></li>
+                        <li><a href="/processos-seletivos/buscar/?tipo=9" class="hover:text-white transition-colors block">Pesquise no IFRN</a></li>
+                        <li><a href="/processos-seletivos/buscar/?tipo=7" class="hover:text-white transition-colors block">Servidores</a></li>
+                        <li><a href="/processos-seletivos/buscar/?tipo=8" class="hover:text-white transition-colors block">Trabalhe no IFRN</a></li>
                     </ul>
+                </li>
+
+                <!-- Cursos -->
+                <li class="space-y-3">
+                    <a href="/cursos/buscar/" aria-haspopup="true" class="font-bold text-emerald-200 hover:text-white transition-colors block text-base border-b border-emerald-700 pb-1">
+                        Cursos
+                    </a>
+                    <ul aria-label="submenu" class="space-y-2 text-xs text-gray-300">
+                        <li><a href="/cursos/buscar/?categoria=cursos-de-pos-graduacao" class="hover:text-white transition-colors block">Cursos de Pós-Graduação</a></li>
+                        <li><a href="/cursos/buscar/?categoria=cursos-superiores" class="hover:text-white transition-colors block">Cursos Superiores</a></li>
+                        <li><a href="/cursos/buscar/?categoria=cursos-tecnicos" class="hover:text-white transition-colors block">Cursos Técnicos</a></li>
+                        <li><a href="/cursos/buscar/?categoria=outros-cursos" class="hover:text-white transition-colors block">Outros Cursos</a></li>
+                    </ul>
+                </li>
+
+                <!-- Campi -->
+                <li class="space-y-3">
+                    <a href="/campus/" aria-haspopup="true" class="font-bold text-emerald-200 hover:text-white transition-colors block text-base border-b border-emerald-700 pb-1">
+                        Campi
+                    </a>
+                    <ul aria-label="submenu" class="space-y-2 text-xs text-gray-300 max-h-64 overflow-y-auto pr-1">
+                        <li><a href="/campus/apodi/" class="hover:text-white transition-colors block">Apodi</a></li>
+                        <li><a href="/campus/caico/" class="hover:text-white transition-colors block">Caicó</a></li>
+                        <li><a href="/campus/canguaretama/" class="hover:text-white transition-colors block">Canguaretama</a></li>
+                        <li><a href="/campus/ceara-mirim/" class="hover:text-white transition-colors block">Ceará-Mirim</a></li>
+                        <li><a href="/campus/curraisnovos/" class="hover:text-white transition-colors block">Currais Novos</a></li>
+                        <li><a href="/campus/ipanguacu/" class="hover:text-white transition-colors block">Ipanguaçu</a></li>
+                        <li><a href="/campus/joaocamara/" class="hover:text-white transition-colors block">João Câmara</a></li>
+                        <li><a href="/campus/jucurutu/" class="hover:text-white transition-colors block">Jucurutu</a></li>
+                        <li><a href="/campus/lajes/" class="hover:text-white transition-colors block">Lajes</a></li>
+                        <li><a href="/campus/macau/" class="hover:text-white transition-colors block">Macau</a></li>
+                        <li><a href="/campus/mossoro/" class="hover:text-white transition-colors block">Mossoró</a></li>
+                        <li><a href="/campus/natalcentral/" class="hover:text-white transition-colors block">Natal-Central</a></li>
+                        <li><a href="/campus/natalcentrohistorico/" class="hover:text-white transition-colors block">Natal-Centro Histórico</a></li>
+                        <li><a href="/campus/natal-zona-leste/" class="hover:text-white transition-colors block">Natal-Zona Leste</a></li>
+                        <li><a href="/campus/natalzonanorte/" class="hover:text-white transition-colors block">Natal-Zona Norte</a></li>
+                        <li><a href="/campus/novacruz/" class="hover:text-white transition-colors block">Nova Cruz</a></li>
+                        <li><a href="/campus/parelhas/" class="hover:text-white transition-colors block">Parelhas</a></li>
+                        <li><a href="/campus/parnamirim/" class="hover:text-white transition-colors block">Parnamirim</a></li>
+                        <li><a href="/campus/paudosferros/" class="hover:text-white transition-colors block">Pau dos Ferros</a></li>
+                        <li><a href="/campus/santacruz/" class="hover:text-white transition-colors block">Santa Cruz</a></li>
+                        <li><a href="/campus/saogoncalo/" class="hover:text-white transition-colors block">São Gonçalo do Amarante</a></li>
+                        <li><a href="/campus/sao-miguel/" class="hover:text-white transition-colors block">São Miguel</a></li>
+                        <li><a href="/campus/sao-paulo-do-potengi/" class="hover:text-white transition-colors block">São Paulo do Potengi</a></li>
+                        <li><a href="/campus/touros/" class="hover:text-white transition-colors block">Touros</a></li>
+                        <li><a href="/campus/umarizal/" class="hover:text-white transition-colors block">Umarizal</a></li>
+                        <li><a href="/campus/reitoria/" class="hover:text-white transition-colors block">Reitoria</a></li>
+                    </ul>
+                </li>
+
+                <!-- Institucional -->
+                <li class="space-y-3">
+                    <a href="/institucional/" aria-haspopup="true" class="font-bold text-emerald-200 hover:text-white transition-colors block text-base border-b border-emerald-700 pb-1">
+                        Institucional
+                    </a>
+                    <ul aria-label="submenu" class="space-y-2 text-xs text-gray-300">
+                        <li><a href="/institucional/apresentacao/" class="hover:text-white transition-colors block">Apresentação</a></li>
+                        <li><a href="/institucional/administracao-e-infraestrutura/" class="hover:text-white transition-colors block">Administração</a></li>
+                        <li><a href="/institucional/comissoes-permanentes/" class="hover:text-white transition-colors block">Comissões permanentes</a></li>
+                        <li><a href="/institucional/comunicacao/" class="hover:text-white transition-colors block">Comunicação Institucional</a></li>
+                        <li><a href="/institucional/ensino/" class="hover:text-white transition-colors block">Ensino</a></li>
+                        <li><a href="/institucional/estudantes/" class="hover:text-white transition-colors block">Estudantes</a></li>
+                        <li><a href="/institucional/extensao/" class="hover:text-white transition-colors block">Extensão</a></li>
+                        <li><a href="/institucional/gabinete/" class="hover:text-white transition-colors block">Gabinete</a></li>
+                        <li><a href="/institucional/gestao-estrategica/" class="hover:text-white transition-colors block">Gestão Estratégica</a></li>
+                        <li><a href="/institucional/governanca/" class="hover:text-white transition-colors block">Governança</a></li>
+                        <li><a href="/institucional/pesquisa-pos-graduacao-e-inovacao/" class="hover:text-white transition-colors block">Pesquisa, Pós-graduação e Inovação</a></li>
+                        <li><a href="/institucional/servidores/" class="hover:text-white transition-colors block">Servidores</a></li>
+                        <li><a href="/institucional/tecnologia-da-informacao/" class="hover:text-white transition-colors block">Tecnologia da Informação</a></li>
+                        <li><a href="/institucional/internacionalizacao/" class="hover:text-white transition-colors block">Internacionalização</a></li>
+                        <li><a href="/institucional/infraestrutura/" class="hover:text-white transition-colors block">Infraestrutura</a></li>
+                        <li><a href="/institucional/polo-de-inovacao-currais-novos/" class="hover:text-white transition-colors block">Polo de Inovação Currais Novos</a></li>
+                    </ul>
+                </li>
+
+                <!-- Acesso à Informação -->
+                <li class="space-y-3">
+                    <a href="/acesso-a-informacao/" aria-haspopup="true" class="font-bold text-emerald-200 hover:text-white transition-colors block text-base border-b border-emerald-700 pb-1">
+                        Acesso à Informação
+                    </a>
+                    <ul aria-label="submenu" class="space-y-2 text-xs text-gray-300">
+                        <li><a href="/acesso-a-informacao/institucional/" class="hover:text-white transition-colors block">Institucional</a></li>
+                        <li><a href="/acesso-a-informacao/acoes-e-programas/" class="hover:text-white transition-colors block">Ações e Programas</a></li>
+                        <li><a href="/acesso-a-informacao/participacao-social/" class="hover:text-white transition-colors block">Participação social</a></li>
+                        <li><a href="/acesso-a-informacao/auditorias/" class="hover:text-white transition-colors block">Auditorias</a></li>
+                        <li><a href="/acesso-a-informacao/convenios-e-transferencias/" class="hover:text-white transition-colors block">Convênios e Transferências</a></li>
+                        <li><a href="/acesso-a-informacao/receitas-e-despesas/" class="hover:text-white transition-colors block">Receitas e Despesas</a></li>
+                        <li><a href="/acesso-a-informacao/licitacoes-e-contratos/" class="hover:text-white transition-colors block">Licitações e Contratos</a></li>
+                        <li><a href="/acesso-a-informacao/servidores/" class="hover:text-white transition-colors block">Servidores</a></li>
+                        <li><a href="/acesso-a-informacao/informacoes-classificadas/" class="hover:text-white transition-colors block">Informações classificadas</a></li>
+                        <li><a href="/acesso-a-informacao/servico-de-informacao-ao-cidadao/" class="hover:text-white transition-colors block">Serviço de Informação ao Cidadão</a></li>
+                        <li><a href="/acesso-a-informacao/perguntas-frequentes/" class="hover:text-white transition-colors block">Perguntas Frequentes</a></li>
+                        <li><a href="/acesso-a-informacao/portal-de-dados-abertos/" class="hover:text-white transition-colors block">Dados Abertos</a></li>
+                        <li><a href="/acesso-a-informacao/sancoes-administrativas/" class="hover:text-white transition-colors block">Sanções administrativas</a></li>
+                        <li><a href="/acesso-a-informacao/ferramentas-e-aspectos-tecnologicos/" class="hover:text-white transition-colors block">Ferramentas e aspectos tecnológicos</a></li>
+                        <li><a href="/acesso-a-informacao/boletins-de-servicos/" class="hover:text-white transition-colors block">Boletins de Serviços</a></li>
+                        <li><a href="/acesso-a-informacao/protecao-de-dados-pessoais/" class="hover:text-white transition-colors block">Proteção de dados pessoais</a></li>
+                        <li><a href="/acesso-a-informacao/estatutos-e-regimentos/" class="hover:text-white transition-colors block">Documentos Institucionais</a></li>
+                        <li><a href="/acesso-a-informacao/transparencia-e-prestacao-de-contas/" class="hover:text-white transition-colors block">Transparência e Prestação de Contas</a></li>
+                    </ul>
+                </li>
+
+                <!-- Eventos, Serviços, Acessibilidade e Créditos -->
+                <li class="space-y-3">
+                    <span class="font-bold text-emerald-200 block text-base border-b border-emerald-700 pb-1">Outros</span>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li><a href="/eventos/" class="hover:text-white transition-colors block font-semibold">Eventos</a></li>
+                        <li><a href="/servicos/" class="hover:text-white transition-colors block font-semibold">Serviços</a></li>
+                        <li><a href="/acessibilidade" class="hover:text-white transition-colors block">Acessibilidade</a></li>
+                        <li><a href="/creditos" class="hover:text-white transition-colors block">Créditos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Banners (links com imagens) -->
+        <div class="py-8 border-b border-emerald-800 bg-emerald-950/40">
+            <div class="max-w-7xl mx-auto px-4">
+                <ul class="flex flex-wrap items-center justify-center gap-6 md:gap-8">
+                    <li>
+                        <a href="https://memoria.ifrn.edu.br/" class="flex flex-col items-center gap-2 p-2 hover:opacity-80 transition-opacity text-xs text-gray-300 text-center">
+                            <img alt="Banner - Memoria" height="42" src="icon_memoria_ifrn.original.png" width="68" class="h-10 w-auto object-contain" />
+                            <span>Memoria</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://siabi.ifrn.edu.br/" class="flex flex-col items-center gap-2 p-2 hover:opacity-80 transition-opacity text-xs text-gray-300 text-center">
+                            <img alt="Banner - Sistema de Bibliotecas" height="92" src="Banner_-_Sistema_de_Bibliotecas.original.png" width="75" class="h-10 w-auto object-contain" />
+                            <span>Sistema de Bibliotecas do IFRN</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://portal.ifrn.edu.br/acesso-a-informacao/licitacoes/" class="flex flex-col items-center gap-2 p-2 hover:opacity-80 transition-opacity text-xs text-gray-300 text-center">
+                            <img alt="Banner - Licitações" height="70" src="licitaC3A7C3B5es.original.png" width="50" class="h-10 w-auto object-contain" />
+                            <span>Licitações</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://portal.ifrn.edu.br/institucional/governanca/ouvidoria/" class="flex flex-col items-center gap-2 p-2 hover:opacity-80 transition-opacity text-xs text-gray-300 text-center">
+                            <img alt="Banner - Ouvidoria" height="70" src="ouvidoria.original.png" width="82" class="h-10 w-auto object-contain" />
+                            <span>Ouvidoria</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://portal.ifrn.edu.br/acesso-a-informacao/processos-eletronicos/" class="flex flex-col items-center gap-2 p-2 hover:opacity-80 transition-opacity text-xs text-gray-300 text-center">
+                            <img alt="Banner - Processos eletrônicos" height="70" src="processos_eletronicos.original.png" width="102" class="h-10 w-auto object-contain" />
+                            <span>Processos eletrônicos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://portal.ifrn.edu.br/acesso-a-informacao/servico-de-informacao-ao-cidadao/" class="flex flex-col items-center gap-2 p-2 hover:opacity-80 transition-opacity text-xs text-gray-300 text-center">
+                            <img alt="Banner para Serviço de Informação ao Cidadão" height="70" src="sic.original.png" width="70" class="h-10 w-auto object-contain" />
+                            <span>Serviço de Informação ao Cidadão</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://portal.ifrn.edu.br/acesso-a-informacao/transparencia-e-prestacao-de-contas/" class="flex flex-col items-center gap-2 p-2 hover:opacity-80 transition-opacity text-xs text-gray-300 text-center">
+                            <img alt="Banner para transparência e prestação de contas" height="69" src="transparencia_e_prestaC3A7C3A3o.original.png" width="57" class="h-10 w-auto object-contain" />
+                            <span>Transparência e prestação de contas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://falabr.cgu.gov.br/web/home" class="flex flex-col items-center gap-2 p-2 hover:opacity-80 transition-opacity text-xs text-gray-300 text-center">
+                            <img alt="Banner do Fala.BR" height="225" src="FalaBR.original.png" width="225" class="h-10 w-auto object-contain" />
+                            <span>Fala.BR</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Informações institucionais (endereço, contato, redes sociais, e-MEC) -->
+        <div class="py-10 border-b border-emerald-800">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                    
+                    <div class="space-y-2">
+                        <h2 title="Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte" class="text-lg font-bold text-white tracking-wide border-l-4 border-emerald-500 pl-3">
+                            Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte
+                        </h2>
+                    </div>
+
+                    <div class="space-y-4 text-xs text-gray-300">
+                        <h3 class="font-semibold text-sm text-emerald-200">Informações de Contato</h3>
+                        <dl class="grid grid-cols-[auto_1fr] gap-x-2 gap-y-1">
+                            <dt class="font-bold text-white">Endereço:</dt>
+                            <dd>Rua Dr. Nilo Bezerra Ramalho, 1692, Tirol</dd>
+                            <dt class="font-bold text-white">CEP:</dt>
+                            <dd>59015-300</dd>
+                            <dt class="font-bold text-white">E-mail:</dt>
+                            <dd><a href="mailto:comunicacao@ifrn.edu.br" class="hover:text-white underline">comunicacao@ifrn.edu.br</a></dd>
+                            <dt class="font-bold text-white">Telefone:</dt>
+                            <dd>(84) 4005-0890</dd>
+                        </dl>
+                        <ul class="flex flex-wrap gap-3 pt-2">
+                            <li><a href="https://www.instagram.com/ifrnoficial/" title="Instagram" class="w-8 h-8 rounded-full bg-emerald-800 hover:bg-emerald-700 flex items-center justify-center text-lg text-white transition-colors"><i class="ph ph-instagram-logo"></i><span class="sr-only">Instagram</span></a></li>
+                            <li><a href="https://twitter.com/ifrnoficial_" title="Twitter/X" class="w-8 h-8 rounded-full bg-emerald-800 hover:bg-emerald-700 flex items-center justify-center text-lg text-white transition-colors"><i class="ph ph-twitter-logo"></i><span class="sr-only">Twitter/X</span></a></li>
+                            <li><a href="https://br.linkedin.com/school/ifrn/" title="Linkedin" class="w-8 h-8 rounded-full bg-emerald-800 hover:bg-emerald-700 flex items-center justify-center text-lg text-white transition-colors"><i class="ph ph-linkedin-logo"></i><span class="sr-only">Linkedin</span></a></li>
+                            <li><a href="https://www.youtube.com/ifrnoficial" title="Youtube" class="w-8 h-8 rounded-full bg-emerald-800 hover:bg-emerald-700 flex items-center justify-center text-lg text-white transition-colors"><i class="ph ph-youtube-logo"></i><span class="sr-only">Youtube</span></a></li>
+                            <li><a href="https://open.spotify.com/show/2dOEWD8AjVqszkAXWHxWwf?si=jgLOqL1-TwW8QEgQYaWpDA" title="Spotify" class="w-8 h-8 rounded-full bg-emerald-800 hover:bg-emerald-700 flex items-center justify-center text-lg text-white transition-colors"><i class="ph ph-spotify-logo"></i><span class="sr-only">Spotify</span></a></li>
+                            <li><a href="https://www.tiktok.com/@ifrnoficial?_r=1&amp;_t=ZS-97QQhb8X6QC" title="TikTok" class="w-8 h-8 rounded-full bg-emerald-800 hover:bg-emerald-700 flex items-center justify-center text-lg text-white transition-colors"><i class="ph ph-tiktok-logo"></i><span class="sr-only">TikTok</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-start md:justify-end">
+                        <a href="https://memoria.ifrn.edu.br/?_gl=1*mkus9i*_ga*NDQyODE5OTAzLjE3ODg4ODgzMTk.*_ga_6MCP6MK8F3*czE3ODg4ODgzMTgkbzEkZzAkdDE3ODg4ODg0NzUkajYwJGwwJGgw" class="flex items-center gap-3 bg-emerald-950 p-3 rounded-lg border border-emerald-800 hover:border-emerald-600 transition-colors max-w-xs">
+                            <div class="flex flex-col text-xs text-gray-300">
+                                <span class="font-bold text-sm text-emerald-200">e-MEC</span>
+                                <span>Consulte o cadastro da instituição no Sistema do e-MEC</span>
+                            </div>
+                            <img src="e-mec-qr-code.png" alt="QR-Code para consulta do cadastro da instituição no Sistema do e-MEC" height="95" width="95" class="w-16 h-16 rounded bg-white p-1 shrink-0" />
+                        </a>
+                    </div>
+
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
 
-    <footer role="contentinfo">
-        <p>&copy; 2026 Bruno Nakamura - Exemplo didático para alunos de webdesign</p>
+        <!-- Copyright -->
+        <div class="pt-6 pb-2 text-center text-xs text-emerald-300/80">
+            <p>Copyright © 2026 | Instituto Federal de Educação, Ciência e Tecnologia do Estado do Rio Grande do Norte</p>
+        </div>
+
     </footer>
+
 </body>
 
 </html>
