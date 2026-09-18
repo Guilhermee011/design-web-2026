@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio - DaisyUI</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-base-200 text-base-content">
+
+  <header>
+    <div class="navbar bg-base-100 shadow-md px-4">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl">Luiz Guilherme</a>
+      </div>
+      <div class="flex-none gap-2">
+        <button class="btn btn-outline btn-sm">Contato</button>
+      </div>
+    </div>
+
+    <div class="hero bg-base-300 py-12">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-4xl font-bold">Desenvolvedor Web</h1>
+          <p class="py-4">Construindo interfaces modernas com Tailwind CSS e DaisyUI.</p>
+          <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto p-6 space-y-12">
+
+    <section class="text-center space-y-4">
+      <h2 class="text-2xl font-bold">Sobre Mim</h2>
+      <p class="max-w-xl mx-auto">Estudante de Análise e Desenvolvimento de Sistemas focado em front-end.</p>
+      <div class="flex justify-center gap-2 flex-wrap">
+        <span class="badge badge-primary">HTML/CSS</span>
+        <span class="badge badge-secondary badge-outline">Tailwind CSS</span>
+        <span class="badge badge-accent">Git & GitHub</span>
+      </div>
+    </section>
+
+    <section id="projetos" class="space-y-6">
+      <h2 class="text-2xl font-bold text-center">Meus Projetos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="card bg-base-100 shadow-xl border border-base-300">
+          <div class="card-body">
+            <h3 class="card-title">Projeto 1</h3>
+            <p>Página web desenvolvida com estrutura semântica em HTML5 e estilização CSS, aplicando conceitos de box-model e estilização de layout.</p>
+            <div class="card-actions justify-end">
+                <a href="https://portfolio-seven-brown-cdv91dwfo9.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                    Acessar
+                  </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-xl border border-base-300">
+          <div class="card-body">
+            <h3 class="card-title">Projeto 2</h3>
+            <p>Interface responsiva construída com Tailwind CSS utilitário, consolidando componentes de navegação, seções de conteúdo e rodapé dinâmico.</p>
+            <div class="card-actions justify-end">
+                <a href="https://github.com/Guilhermee011/design-web-2026/tree/tailwind" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                    Ver no GitHub
+                  </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-xl border border-base-300">
+          <div class="card-body">
+            <h3 class="card-title">Projeto 3</h3>
+            <p>Aplicação web interativa com componentes visuais do DaisyUI.</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-accent btn-sm">Acessar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="max-w-md mx-auto bg-base-100 p-6 rounded-box shadow-md space-y-4">
+      <h2 class="text-2xl font-bold text-center">Entre em Contato</h2>
+      <div class="form-control w-full">
+        <label class="label"><span class="label-text">Seu Email</span></label>
+        <input type="email" placeholder="lg394353@gmail.com" class="input input-bordered w-full" />
+      </div>
+      <button class="btn btn-primary w-full">Enviar Mensagem</button>
+    </section>
+
+  </main>
+
+  <footer class="footer footer-center p-4 bg-base-300 text-base-content mt-12">
+    <aside>
+      <p>Desenvolvido na Tarefa 33 - Módulo 3 (DaisyUI)</p>
+    </aside>
+  </footer>
+
+</body>
+</html>
