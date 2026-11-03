@@ -145,10 +145,10 @@
               return;
             }
 
-        this.oficinas.push({
-        id: this.proximoId,
-        titulo: titulo,
-        favorita: false
+  this.oficinas.push({
+    id: this.proximoId,
+    titulo: titulo,
+    favorita: false
   });
 
   this.proximoId++;
@@ -169,7 +169,17 @@
         //  3. Inverta o valor:
         //       oficina.favorita = !oficina.favorita
         // ==========================================
-     
+        alternarFavorito(id) {
+         const oficina = this.oficinas.find(
+             item => item.id === id
+         );
+
+            if (!oficina) {
+                  return;
+        }
+
+  oficina.favorita = !oficina.favorita;
+},
 
         // ==========================================
         // TODO 3 — removerOficina(id)  
