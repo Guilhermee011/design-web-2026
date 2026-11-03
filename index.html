@@ -104,13 +104,13 @@
         // ==========================================
         oficinasVisiveis() {
          if (this.filtro === 'favoritas') {
-             return this.oficinas.filter(
-            oficina => oficina.favorita
-    );
-  }
+            return this.oficinas.filter(
+             oficina => oficina.favorita
+        );
+     }
 
-  return this.oficinas;
-}
+     return this.oficinas;
+    }
       },
 
       // ==========================================
@@ -192,7 +192,11 @@
         //  2. Guarde a nova lista em this.oficinas
         //  3. Observe como v-for atualiza a interface
         // ==========================================
-
+        removerOficina(id) {
+            this.oficinas = this.oficinas.filter(
+            item => item.id !== id
+             );
+                },
       }
 
     }).mount('#app')
