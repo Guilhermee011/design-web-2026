@@ -1,49 +1,14 @@
+Acessibilidade em Natal/RN
 
-### Repositório da turma de Desing Web 2026
+1. Subtema
+<<<Acessibilidade>>>
 
-Criando texto no repositorio, bom dia cesimar!
+A acessibilidade tem como objetivo garantir que todas as pessoas, independentemente de suas limitações físicas, visuais, auditivas ou cognitivas, possam realizar suas atividades e ter acesso aos mesmos espaços, serviços e oportunidades, promovendo a inclusão e a igualdade na sociedade, especialmente na cidade de Natal/RN.
 
-enviando na branch
-=======
-Arquivo de codigo compartilhado
+2. Problema:
 
-# Cartão de Apresentação – Bruno Nakamura
+Em Natal/RN, muitas pessoas com deficiência ainda enfrentam dificuldades no dia a dia devido à falta de acessibilidade em diferentes locais, como calçadas, ruas, prédios públicos, transportes e ambientes digitais, onde a ausência de adaptações dificulta a mobilidade, a comunicação e o acesso à informação, comprometendo sua autonomia e qualidade de vida.
 
-Projeto didático para ensinar a integração entre **HTML semântico** e **SCSS** (pré-processador CSS).
+3. Solução:
 
-## Estrutura
-
-projeto/
-
-├── index.html 
-
-├── scss/
-
-└── style.scss 
-
-└── css/
-
-└── style.css # Arquivo gerado pelo SCSS (não edite jamais ou vai perder tudo para sempre)
-
-
-## Como usar
-
-1. **Clone ou baixe** os arquivos.
-2. **Compile o SCSS** para CSS:
-   - Com o Sass instalado: `sass scss/style.scss css/style.css --watch`
-   - Ou use a extensão "Live Sass Compiler" no VS Code.
-3. **Abra** o `index.html` no navegador.
-
-## Personalize
-
-- **Cores**: altere as variáveis no início do `style.scss` (`$color-primary`, `$color-secondary`, etc.).
-- **Imagem**: substitua a URL placeholder (`https://via.placeholder.com/...`) pelo seu próprio avatar.
-- **Conteúdo**: edite o HTML para mudar texto, tecnologias e links.
-
-## Boas práticas aplicadas
-
-- Tags HTML semânticas (`header`, `main`, `section`, `footer`)
-- Atributos de acessibilidade (`role`, `aria-label`, `focus-visible`)
-- Responsividade com mixins (mobile-first)
-- Código SCSS organizado com variáveis e aninhamento
->>>>>>> upstream/main
+Uma das formas de melhorar essa realidade é incentivar iniciativas que tornem Natal uma cidade mais acessível para todos, por meio de melhorias nas calçadas e rampas, instalação de sinalizações adequadas, adaptação dos transportes públicos, criação de plataformas digitais acessíveis e utilização de recursos como leitores de tela, legendas e descrições de imagens, promovendo mais inclusão, independência e igualdade de oportunidades.
