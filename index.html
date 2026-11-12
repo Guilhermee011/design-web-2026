@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inclui+: informação, serviços e ferramentas para uma sociedade mais acessível.">
+  <title>Inclui+ | Acessibilidade para todos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+  <div class="topbar"><div class="container topbar-inner"><span>Inclusão começa com acesso à informação.</span><span class="topbar-right">Portal demonstrativo de acessibilidade</span></div></div>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Inclui+, página inicial"><span class="brand-mark" aria-hidden="true">i+</span><span>inclui<span class="brand-plus">+</span><small>ACESSIBILIDADE PARA TODOS</small></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menu">☰</button>
+      <nav id="mainNav" class="nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#recursos">Acessibilidade</a><a href="#mapa">Locais acessíveis</a><a href="#direitos">Direitos</a><a href="#denuncia">Relatar barreira</a>
+      </nav>
+      <button class="access-open" id="openAccess" aria-label="Abrir ferramentas de acessibilidade">◐ <span>Acessibilidade</span></button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> INCLUSÃO • AUTONOMIA • RESPEITO</span>
+          <h1>Uma sociedade acessível <span>é melhor para todos.</span></h1>
+          <p>Informação, orientação e ferramentas para tornar os espaços, os serviços e a internet mais acessíveis a pessoas com deficiência.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#mapa">Encontrar locais acessíveis <span aria-hidden="true">→</span></a><a class="btn btn-outline" href="#sobre">Conheça o Inclui+</a></div>
+          <div class="hero-note"><span aria-hidden="true">✓</span> Informação clara. Mais autonomia. Menos barreiras.</div>
+        </div>
+        <div class="hero-visual" aria-label="Ilustração de pessoas diversas em um espaço acessível">
+          <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+          <div class="visual-card card-top"><span class="visual-icon">♿</span><div><strong>Mobilidade</strong><small>Espaços para todos</small></div></div>
+          <div class="visual-person"><div class="person-head"></div><div class="person-body"></div><div class="wheel"></div><div class="wheel-inner"></div></div>
+          <div class="visual-card card-bottom"><span class="visual-icon eye-icon">◉</span><div><strong>Acesso à informação</strong><small>Conteúdo acessível</small></div></div>
+          <span class="visual-spark spark-one">✦</span><span class="visual-spark spark-two">✳</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-links"><div class="container quick-grid">
+      <a href="#recursos"><span class="quick-icon">◐</span><span><strong>Ferramentas acessíveis</strong><small>Adapte a visualização</small></span><b>→</b></a>
+      <a href="#mapa"><span class="quick-icon">⌖</span><span><strong>Locais acessíveis</strong><small>Consulte o diretório</small></span><b>→</b></a>
+      <a href="#direitos"><span class="quick-icon">§</span><span><strong>Conheça seus direitos</strong><small>Informação e orientação</small></span><b>→</b></a>
+      <a href="#denuncia"><span class="quick-icon">✉</span><span><strong>Relate uma barreira</strong><small>Ajude a melhorar os espaços</small></span><b>→</b></a>
+    </div></section>
+
+    <section class="section" id="sobre"><div class="container about-grid">
+      <div><span class="eyebrow">QUEM SOMOS</span><h2>Mais do que informar, queremos <span>transformar realidades.</span></h2></div>
+      <div class="about-text"><p>O Inclui+ é uma iniciativa digital demonstrativa que reúne orientações sobre acessibilidade, direitos, mobilidade e inclusão. Nosso objetivo é facilitar o acesso à informação e incentivar a construção de ambientes onde todas as pessoas possam participar com autonomia.</p><p>A acessibilidade beneficia pessoas com deficiência, pessoas idosas, pessoas com mobilidade reduzida e toda a comunidade.</p><div class="mission-grid"><div><strong>Missão</strong><span>Ampliar o acesso à informação e estimular a inclusão.</span></div><div><strong>Visão</strong><span>Contribuir para cidades e serviços sem barreiras.</span></div><div><strong>Valores</strong><span>Respeito, autonomia, diversidade e participação.</span></div></div></div>
+    </div></section>
+
+    <section class="section section-soft" id="recursos"><div class="container">
+      <div class="section-heading"><div><span class="eyebrow">NAVEGUE COM CONFORTO</span><h2>Recursos de acessibilidade</h2><p>Personalize a página de acordo com sua necessidade. As configurações são aplicadas neste navegador.</p></div></div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon">Aa</span><h3>Leitura confortável</h3><p>Aumente ou diminua o tamanho do texto e escolha uma fonte com boa legibilidade.</p><button class="text-link" data-action="font-up">Aumentar texto +</button></article>
+        <article class="feature-card"><span class="feature-icon">◐</span><h3>Contraste ajustável</h3><p>Ative um tema de alto contraste para destacar textos e elementos da interface.</p><button class="text-link" data-action="contrast">Ativar alto contraste</button></article>
+        <article class="feature-card"><span class="feature-icon">▶</span><h3>Leitura em voz alta</h3><p>Ouça o conteúdo principal usando a tecnologia de voz disponível no navegador.</p><button class="text-link" id="readPage">Ouvir conteúdo</button></article>
+        <article class="feature-card"><span class="feature-icon">⌨</span><h3>Navegação por teclado</h3><p>Use Tab para avançar, Shift + Tab para voltar e Enter para ativar links e botões.</p><span class="feature-caption">Atalhos compatíveis com teclado</span></article>
+      </div>
+      <div class="access-tip"><strong>Dica:</strong> leitores de tela como NVDA, JAWS e VoiceOver podem interpretar a estrutura semântica, os títulos e os textos alternativos desta página. O suporte deve ser validado com testes reais.</div>
+    </div></section>
+
+    <section class="section" id="mapa"><div class="container">
+      <div class="section-heading heading-row"><div><span class="eyebrow">DESCUBRA E PLANEJE</span><h2>Diretório de acessibilidade</h2><p>Consulte exemplos de locais e recursos que devem ser verificados antes de uma visita.</p></div><span class="demo-label">DADOS DE EXEMPLO</span></div>
+      <div class="directory-tools"><label class="search-box"><span aria-hidden="true">⌕</span><input id="placeSearch" type="search" placeholder="Buscar por nome ou recurso..." aria-label="Buscar locais"></label><label class="select-label">Tipo de local<select id="placeType"><option value="todos">Todos os tipos</option><option value="saude">Saúde</option><option value="cultura">Cultura</option><option value="servico">Serviço público</option><option value="lazer">Lazer</option></select></label><label class="select-label">Recurso<select id="placeFeature"><option value="todos">Qualquer recurso</option><option value="rampa">Rampa de acesso</option><option value="banheiro">Banheiro acessível</option><option value="piso">Piso tátil</option><option value="elevador">Elevador</option></select></label></div>
+      <div class="directory-grid" id="placeList" aria-live="polite"></div>
+      <p class="small-note">Atenção: os locais exibidos são exemplos fictícios para demonstração do funcionamento. Não representam avaliações ou garantias de acessibilidade de estabelecimentos reais.</p>
+    </div></section>
+
+    <section class="section section-dark" id="direitos"><div class="container rights-grid">
+      <div><span class="eyebrow eyebrow-light">INFORMAÇÃO É UM DIREITO</span><h2>Conheça os principais marcos da inclusão.</h2><p>Consulte fontes oficiais para entender direitos, serviços e políticas de acessibilidade no Brasil.</p><a class="btn btn-light" href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm" target="_blank" rel="noopener">Consultar Lei Brasileira de Inclusão ↗</a></div>
+      <div class="rights-list">
+        <article><span>01</span><div><h3>Lei Brasileira de Inclusão</h3><p>Lei nº 13.146/2015: assegura e promove, em condições de igualdade, o exercício dos direitos e das liberdades fundamentais da pessoa com deficiência.</p><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm" target="_blank" rel="noopener">Ler legislação oficial ↗</a></div></article>
+        <article><span>02</span><div><h3>Acessibilidade digital</h3><p>As WCAG apresentam recomendações para tornar conteúdos da web perceptíveis, operáveis, compreensíveis e robustos.</p><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener">Consultar WCAG / W3C ↗</a></div></article>
+        <article><span>03</span><div><h3>Acessibilidade no governo</h3><p>O eMAG reúne recomendações para construção e avaliação de páginas e serviços digitais acessíveis no contexto brasileiro.</p><a href="https://emag.governoeletronico.gov.br/" target="_blank" rel="noopener">Consultar eMAG ↗</a></div></article>
+        <article><span>04</span><div><h3>Convenção da ONU</h3><p>A Convenção sobre os Direitos das Pessoas com Deficiência orienta políticas de igualdade, participação e acessibilidade.</p><a href="https://www.gov.br/mdh/pt-br/navegue-por-temas/pessoa-com-deficiencia" target="_blank" rel="noopener">Portal oficial de direitos ↗</a></div></article>
+      </div>
+    </div></section>
+
+    <section class="section" id="denuncia"><div class="container report-grid">
+      <div><span class="eyebrow">SUA PARTICIPAÇÃO IMPORTA</span><h2>Encontrou uma barreira? Conte para nós.</h2><p>Registre uma situação que dificulta a circulação ou o acesso à informação. Neste protótipo, o relato fica salvo somente no armazenamento local do navegador.</p><div class="report-callout"><span>ⓘ</span><p>Este formulário é demonstrativo. Ele não envia denúncias a órgãos públicos nem substitui canais oficiais de atendimento.</p></div></div>
+      <form id="reportForm" class="report-form">
+        <div class="form-title"><h3>Relatar uma barreira</h3><span>Campos com * são obrigatórios</span></div>
+        <label>Seu nome (opcional)<input name="name" autocomplete="name" placeholder="Como podemos chamar você?"></label>
+        <label>Tipo de barreira *<select name="category" required><option value="">Selecione uma opção</option><option>Falta de rampa ou acesso</option><option>Calçada ou via inadequada</option><option>Ausência de piso tátil</option><option>Falta de sinalização acessível</option><option>Barreira em site ou aplicativo</option><option>Outra situação</option></select></label>
+        <label>Local da ocorrência *<input name="location" required placeholder="Rua, bairro, cidade ou nome do local"></label>
+        <label>Descreva o problema *<textarea name="description" rows="4" required minlength="10" placeholder="Explique o que aconteceu e como isso afeta o acesso..."></textarea></label>
+        <label class="check-label"><input type="checkbox" name="consent" required> Confirmo que as informações são verdadeiras e aceito salvá-las neste dispositivo.</label>
+        <button class="btn btn-primary btn-full" type="submit">Salvar relato <span aria-hidden="true">→</span></button>
+        <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </div></section>
+
+    <section class="section section-soft" id="noticias"><div class="container"><div class="section-heading"><div><span class="eyebrow">CONHECIMENTO E PARTICIPAÇÃO</span><h2>Atitudes que removem barreiras</h2><p>Orientações rápidas para uma convivência mais inclusiva.</p></div></div>
+      <div class="news-grid">
+        <article class="news-card"><span class="news-number">01 / MOBILIDADE</span><h3>Não bloqueie rampas e calçadas</h3><p>Rampas, faixas livres e rebaixamentos precisam permanecer desobstruídos para garantir circulação segura.</p></article>
+        <article class="news-card"><span class="news-number">02 / COMUNICAÇÃO</span><h3>Descreva imagens importantes</h3><p>Textos alternativos ajudam pessoas que usam leitores de tela a compreender imagens com informação relevante.</p></article>
+        <article class="news-card"><span class="news-number">03 / CONVIVÊNCIA</span><h3>Pergunte antes de ajudar</h3><p>Respeite a autonomia da pessoa. Ofereça ajuda e aguarde a orientação antes de tocar na cadeira de rodas ou conduzir alguém.</p></article>
+      </div>
+    </div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-main"><div><a class="brand brand-footer" href="#inicio"><span class="brand-mark">i+</span><span>inclui<span class="brand-plus">+</span><small>ACESSIBILIDADE PARA TODOS</small></span></a><p>Informação acessível para uma sociedade com mais autonomia e participação.</p></div><div><strong>Explore</strong><a href="#sobre">Sobre o projeto</a><a href="#recursos">Recursos de acessibilidade</a><a href="#mapa">Diretório</a></div><div><strong>Informações</strong><a href="#direitos">Direitos e legislação</a><a href="#denuncia">Relatar uma barreira</a><a href="#inicio">Voltar ao topo ↑</a></div></div><div class="container footer-bottom"><span>© 2026 Inclui+ • Projeto demonstrativo</span><span>Feito para promover acesso, respeito e inclusão.</span></div></footer>
+
+  <aside class="access-panel" id="accessPanel" aria-label="Painel de acessibilidade" hidden>
+    <div class="panel-head"><div><span class="eyebrow">PERSONALIZE</span><h2>Acessibilidade</h2></div><button id="closeAccess" class="close-btn" aria-label="Fechar painel">×</button></div>
+    <div class="panel-controls"><div class="control-row"><div><strong>Tamanho do texto</strong><small>Ajuste a leitura</small></div><div class="control-buttons"><button id="fontDown" aria-label="Diminuir texto">A−</button><button id="fontUp" aria-label="Aumentar texto">A+</button></div></div>
+      <div class="control-row"><div><strong>Alto contraste</strong><small>Mais contraste visual</small></div><button id="contrastToggle" class="toggle-btn" aria-pressed="false">Desativado</button></div>
+      <div class="control-row"><div><strong>Fonte legível</strong><small>Atkinson Hyperlegible</small></div><button id="fontToggle" class="toggle-btn" aria-pressed="false">Desativada</button></div>
+      <button id="resetAccess" class="reset-btn">Restaurar configurações</button>
+    </div><p class="panel-foot">As preferências são aplicadas nesta página e neste navegador.</p>
+  </aside>
+  <div class="panel-backdrop" id="panelBackdrop" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
